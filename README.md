@@ -1,1 +1,11 @@
-# Python-Gui-Programming
+# Penjelasan Script
+1.	Import Library 
+Script dimulai dengan mengimpor library Tkinter dengan menggunakan perintah from tkinter import *. Library ini digunakan untuk membuat antarmuka GUI pada program.
+2.	Membuat Window 
+Program membuat window GUI menggunakan perintah window = Tk(). Fungsi Tk() digunakan untuk membuat instance dari Tkinter dan menjadikannya sebagai window utama untuk program. Selanjutnya, program memberikan judul untuk window dengan perintah window.title("Kalkulator GUI Dengan Python") dan mengatur ukuran window menggunakan perintah window.geometry('450x300').
+3.	Membuat Frame 
+Frame merupakan widget Tkinter yang digunakan untuk membagi antarmuka GUI menjadi beberapa bagian. Pada program ini, dibuat dua buah frame, yaitu frame untuk input nilai dan frame untuk output hasil. Frame untuk input nilai dibuat dengan perintah input_frame = Frame(window) dan input_frame.pack(pady=10). Sedangkan, frame untuk output hasil dibuat dengan perintah output_frame = Frame(window) dan output_frame.pack(pady=10).
+4.	Membuat Label dan Entry 
+Label dan Entry merupakan widget Tkinter yang digunakan untuk menampilkan teks dan menerima input dari user. Pada program ini, dibuat dua buah label untuk menampilkan pesan "Masukkan Nilai Pertama" dan "Masukkan Nilai Kedua" menggunakan perintah lbl = Label(input_frame, text="Masukkan Nilai Pertama:", anchor="e", width=20, font=("Arial", 12)) dan lbl2 = Label(input_frame, text="Masukkan Nilai Kedua:", anchor="e", width=20, font=("Arial", 12)). Selanjutnya, dibuat dua buah entry untuk menerima input nilai dari user menggunakan perintah nilai1 = Entry(input_frame, width=20, font=("Arial", 12)) dan nilai2 = Entry(input_frame, width=20, font=("Arial", 12)).
+5.	Membuat fungsi operasi 
+Pada program ini, terdapat tujuh fungsi operasi matematika, yaitu tambah, kurang, kali, bagi, pangkat, mod, dan akar.  Fungsi-fungsi ini digunakan untuk melakukan operasi matematika pada dua nilai yang dimasukkan oleh user dan menampilkan hasilnya pada label hasil. Terakhir, semua elemen GUI seperti label, entry, dan tombol ditempatkan pada frame yang sesuai dengan menggunakan method pack(). Pada akhir script, GUI ditampilkan pada layar menggunakan method mainloop(). Method mainloop() akan menjalankan GUI dalam mode tak terhingga sampai pengguna menutup jendela aplikasi.
